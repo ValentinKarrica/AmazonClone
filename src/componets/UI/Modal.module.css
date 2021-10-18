@@ -1,0 +1,69 @@
+.backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: 20;
+    background-color: rgba(0, 0, 0, 0.75);
+  }
+  .firstDiv{
+    -webkit-text-size-adjust: 100%;
+    font-size: 14px;
+    line-height: 20px;
+    color: #0F1111;
+    font-family: "Amazon Ember",Arial,sans-serif;
+    box-sizing: border-box;
+    height: 100%;
+    width: 100%;
+    right: 0;
+    top: 0;
+    overflow: auto;
+    position: fixed;
+    z-index: 1009;
+    padding-bottom: 0px;
+    visibility: visible;
+  }
+  .modal {
+    -webkit-text-size-adjust: 100%;
+    font-size: 14px;
+    line-height: 20px;
+    color: #0F1111;
+    font-family: "Amazon Ember",Arial,sans-serif;
+    box-sizing: border-box;
+    z-index: 1010;
+    min-width: 0;
+    padding: 0;
+    width: 375px;
+    max-width: none;
+    visibility: visible;
+    position: absolute;
+    margin: 0px;
+    top: 45%;
+    left: 45%;
+    opacity: 1;
+    transform: translateY(8px);
+    display: block;
+  }
+  .content{
+    -webkit-text-size-adjust: 100%;
+    font-size: 14px;
+    line-height: 20px;
+    color: #0F1111;
+    font-family: "Amazon Ember",Arial,sans-serif;
+    visibility: visible;
+    box-sizing: border-box;
+    overflow: hidden;
+    width: 100%;
+    background-color: #fff;
+    position: relative;
+    border-radius: 8px;
+    border: 1px solid;
+    border-color: #D5D9D9;
+    box-shadow: 0 0 14px 0 rgba(15,17,17,.5);
+    height: 100%;
+  }
+  
+ 
+
+  

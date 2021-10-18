@@ -1,0 +1,382 @@
+.nav-left{
+    -webkit-text-size-adjust: 100%;
+    font-family: inherit;
+    font-size: 14px;
+    display: flex;
+
+    line-height: 1em;
+    width: auto;
+    position: static;
+    float: none;
+    height: 60px;
+    color: #0F1111;
+}
+
+
+.div-nav-logo{
+    -webkit-text-size-adjust: 100%;
+    color: #0F1111;
+    font-family: inherit;
+    font-size: 14px;
+    line-height: 0;
+    height: 100%;
+    width: auto;
+    padding: 4px 0 0 0;
+    display: flex;
+    position: relative;
+    float: none;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    flex-shrink: 0;
+    margin-left: 1px;
+}
+
+
+.nav-logo-link{
+    -webkit-text-size-adjust: 100%;
+    font-family: inherit;
+    font-size: 14px;
+    line-height: 0;
+    color: #007185;
+    
+    clear: both;
+    cursor: pointer;
+    height: 50px;
+    /* width: 100%; */
+    display: flex;
+    position: static;
+    float: none;
+    flex-shrink: 0;
+    text-decoration: none;
+    padding: 1px 8px 0 6px;
+    margin: 1px;
+}
+.nav-logo{
+    -webkit-text-size-adjust: 100%;
+    font-family: inherit;
+    font-size: 14px;
+    line-height: 0;
+    color: #007185;
+    cursor: pointer;
+    background-repeat: repeat-x;
+    
+    float: left;
+    text-indent: -500px;
+    background-position: -10px -51px;
+    width: 97px;
+    height: 30px;
+    background-image: url("https://images-eu.ssl-images-amazon.com/images/G/02/gno/sprites/nav-sprite-global-2x-hm-dsk-reorg._CB405938119_.png");
+    background-size: 350px;
+    margin-top: 12px;
+    pointer-events: none;
+}
+.nav-logo-ext{
+    -webkit-text-size-adjust: 100%;
+    font-family: inherit;
+    font-size: 14px;
+    line-height: 0;
+    color: #007185;
+    cursor: pointer;
+    background-position: 0 1000px;
+    background-repeat: repeat-x;
+   
+    float: left;
+    display: none;
+    background-image: url("https://images-eu.ssl-images-amazon.com/images/G/02/gno/sprites/nav-sprite-global-2x-hm-dsk-reorg._CB405938119_.png");
+    background-size: 350px;
+    margin-top: 12px;
+    pointer-events: none;
+}
+
+.nav-end{
+    -webkit-text-size-adjust: 100%;
+    cursor: pointer;
+
+    float: left;
+    margin: 6px 0 0 1px;
+    font-size: 13.5px;
+    color: #fff;
+    line-height: 14px;
+    font-family: inherit;
+    display: block;
+    background-position: -270px -9px;
+    height: 14px;
+    width: auto;
+    margin-top: 16px;
+    pointer-events: none;
+}
+
+
+.nav-logo-link:hover, .nav-logo-link:active, .nav-a:active, .nav-a:hover{
+    padding: 0 7px 0 5px;
+    border: 1px solid;
+    border-radius: 2px;
+    border-color: #fff;
+    outline: 0;
+}
+
+
+
+.a-declaredive{
+    -webkit-text-size-adjust: 100%;
+    color: #0F1111;
+    font-family: inherit;
+    line-height: 1em;
+    font-size: 14px;
+    
+    display: flex;
+    position: static;
+    float: none;
+    width: fit-content;
+}
+
+.nav-a{
+    -webkit-text-size-adjust: 100%;
+    font-size: 14px;
+    font-family: inherit;
+    text-decoration: none;
+    cursor: pointer;
+    color: #d6d6d6;
+    line-height: 39px;
+    overflow: hidden;
+    
+    display: flex;
+    position: static;
+    float: none;
+    flex-flow: row nowrap;
+    -webkit-box-align: center;
+    align-items: center;
+    width: fit-content;
+    height: auto;
+    box-shadow: none;
+    scroll-margin: 0;
+    padding: 0 9px 0 9px;
+    margin: 5px 2px 5px 0;
+}
+
+.nav-loc-icon{
+    -webkit-text-size-adjust: 100%;
+    font-size: 14px;
+    font-family: inherit;
+    cursor: pointer;
+    color: #d6d6d6;
+    line-height: 39px;
+    background-repeat: repeat-x;
+    
+    background-image: url("https://images-eu.ssl-images-amazon.com/images/G/02/gno/sprites/nav-sprite-global-2x-hm-dsk-reorg._CB405938119_.png");
+    background-size: 350px;
+    left: 2px;
+    top: 8px;
+    display: flex;
+    position: static;
+    float: none;
+    background-position: -71px -378px;
+    width: 15px;
+    height: 18px;
+    margin-top: 8px;
+}
+
+
+.lines{
+    -webkit-text-size-adjust: 100%;
+    font-size: 14px;
+    font-family: inherit;
+    cursor: pointer;
+    color: #d6d6d6;
+    line-height: 39px;
+
+    margin-left: 3px;
+    display: flex;
+    position: static;
+    float: none;
+    flex-flow: column nowrap;
+}
+
+
+.nav-line1{
+    -webkit-text-size-adjust: 100%;
+    cursor: pointer; 
+    clear: both;
+    display: inline-block;
+    white-space: nowrap;
+    font-family: inherit;
+    font-size: 12px;
+    line-height: 14px;
+    height: 14px;
+    font-weight: 400;
+    color: #ccc;
+    margin-top: 0;
+    padding-right: 0;
+}
+
+.nav-line2{
+
+    -webkit-text-size-adjust: 100%;
+    cursor: pointer;
+    clear: both;
+    display: inline-block;
+    white-space: nowrap;
+    font-family: inherit;
+    font-size: 14px;
+    line-height: 15px;
+    font-weight: 700;
+    color: #fff;
+    padding-bottom: 1px;
+    padding-right: 0;
+}
+
+.aHeader{
+    -webkit-text-size-adjust: 100%;
+    font-size: 14px;
+    line-height: 20px;
+    color: #0F1111;
+    font-family: "Amazon Ember",Arial,sans-serif;
+    visibility: visible;
+    box-sizing: border-box;
+    display: block;
+    position: relative;
+    text-align: left;
+    background: linear-gradient(to bottom,#f7f7f7,#eaeaea);
+    box-shadow: 0 1px 0 rgba(255,255,255,.5) inset,0 -1px 0 rgba(255,255,255,.4) inset;
+    margin: 0;
+    z-index: 10;
+    border-bottom: 1px solid #D5D9D9;
+    background-color: #F0F2F2;
+    border-radius: 8px 8px 0 0;
+    padding: 0 24px;
+}
+
+.aH4{
+    -webkit-text-size-adjust: 100%;
+    color: #0F1111;
+    font-family: "Amazon Ember",Arial,sans-serif;
+    visibility: visible;
+    text-align: left;
+    box-sizing: border-box;
+    margin: 0;
+    text-rendering: optimizeLegibility;
+    font-weight: 700;
+    padding: 16px 0;
+    min-height: 56px;
+    margin-right: 28px;
+    line-height: 24px;
+    font-size: 16px;
+}
+
+.aButton{
+    -webkit-text-size-adjust: 100%;
+    visibility: visible;
+    box-sizing: border-box;
+    font-family: inherit;
+    font-size: 100%;
+
+    cursor: pointer;
+    -webkit-appearance: button;
+    display: block;
+    zoom: 1;
+    background-color: transparent;
+    border-radius: 3px;
+    border: 1px solid;
+    border-color: transparent;
+    float: right;
+    position: absolute;
+    top: 50%;
+    right: 5px;
+    line-height: 0;
+    opacity: 0;
+    width: 1px;
+    height: 1px;
+    margin: -21px 0 0;
+    padding: 16px;
+}
+
+.aI{
+    -webkit-text-size-adjust: 100%;
+    visibility: visible;
+    font-family: inherit;
+    font-size: 100%;
+    cursor: pointer;
+    line-height: 0;
+    box-sizing: border-box;
+    font-style: italic;
+    background-image: url(https://m.media-amazon.com/images/S/sash/McBZv0ZvnbehkIx.png);
+    background-size: 400px 900px;
+    background-repeat: no-repeat;
+    vertical-align: top;
+    opacity: .64;
+    width: 10px;
+    height: 9px;
+    background-position: -297px -5px;
+    color: black;
+}
+
+.aText{
+    -webkit-text-size-adjust: 100%;
+    font-family: "Amazon Ember",Arial,sans-serif;
+    visibility: visible;
+    text-align: left;
+    box-sizing: border-box;
+    font-size: 12px!important;
+    line-height: 16px!important;
+    color: #565959!important;
+    margin-bottom: 16px!important;
+}
+
+.aPrimecontain{
+    -webkit-text-size-adjust: 100%;
+    font-size: 14px;
+    line-height: 20px;
+    color: #0F1111;
+    font-family: "Amazon Ember",Arial,sans-serif;
+    visibility: visible;
+    box-sizing: border-box;
+    background-color: #fff;
+    text-align: left;
+    overflow-x: hidden;
+    padding: 16px 24px;
+    height: auto;
+    overflow-y: auto;
+}
+
+.abuttonprime{
+    -webkit-text-size-adjust: 100%;
+    font-size: 14px;
+    line-height: 20px;
+    font-family: "Amazon Ember",Arial,sans-serif;
+    visibility: visible;
+    box-sizing: border-box;
+    border-radius: 3px;
+    border-style: solid;
+    border-width: 1px;
+    cursor: pointer;
+    display: inline-block;
+    padding: 0;
+    text-align: center;
+    text-decoration: none!important;
+    vertical-align: middle;
+    background: #f0c14b;
+    border-color: #a88734 #9c7e31 #846a29;
+    color: #111;
+    width: 100%!important;
+}
+
+.abuttonText{
+    -webkit-text-size-adjust: 100%;
+    font-family: "Amazon Ember",Arial,sans-serif;
+    visibility: visible;
+    cursor: pointer;
+    background-color: transparent;
+    border: 0;
+    display: block;
+    font-size: 13px;
+    line-height: 29px;
+    margin: 0;
+    outline: 0;
+    padding: 0 10px 0 11px;
+    text-align: center;
+    white-space: nowrap;
+    color: #111;
+    box-sizing: border-box;
+}

@@ -1,0 +1,41 @@
+.test{
+    -webkit-text-size-adjust: 100%;
+    color: #0F1111;
+    font-family: inherit;
+    line-height: 1em;
+    width: 100%;
+    font-size: 14px;
+    z-index: 5;
+    display: flex;
+    flex-direction: row;
+    position: static;
+    float: none;
+    flex-flow: row nowrap;
+    height: 60px;
+    background-color: #131921;
+    padding: 0px;
+}
+
+.nav-main{
+    -webkit-text-size-adjust: 100%;
+    color: #f5fafa;
+    font-family: inherit;
+    font-size: 12px;
+    line-height: 1em;
+    background-repeat: repeat-x;
+    /* -webkit-box-sizing: border-box; */
+    width: 100%;
+    transform: translate3d(0,0,0);
+    z-index: 4;
+    background-position: 0 -725px;
+    background-size: 350px;
+    background-image: none;
+    background-color: #232f3e;
+    display: flex;
+    position: static;
+    float: none;
+    flex-flow: row nowrap;
+    height: 39px;
+    padding-top: 0;
+    padding-left: 1px;
+}

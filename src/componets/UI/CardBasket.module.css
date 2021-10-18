@@ -1,0 +1,78 @@
+.sc-card-style{
+    -webkit-text-size-adjust: 100%;
+    font-size: 14px;
+    line-height: 20px;
+    color: #0F1111;
+    font-family: "Amazon Ember",Arial,sans-serif;
+    box-sizing: border-box;
+    overflow: hidden;
+    padding: 20px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    background-color: #FFF;
+}
+
+.arow{
+    -webkit-text-size-adjust: 100%;
+    font-size: 14px;
+    line-height: 20px;
+    color: #0F1111;
+    font-family: "Amazon Ember",Arial,sans-serif;
+    box-sizing: border-box;
+    width: 100%;
+}
+.aLinkrow{
+    -webkit-text-size-adjust: 100%;
+    font-size: 14px;
+    line-height: 20px;
+    font-family: "Amazon Ember",Arial,sans-serif;
+    box-sizing: border-box;
+    text-decoration: none;
+    color: #007185;
+}
+
+
+.formColumn{
+    -webkit-text-size-adjust: 100%;
+    font-size: 14px;
+    line-height: 20px;
+    color: #0F1111;
+    font-family: "Amazon Ember",Arial,sans-serif;
+    box-sizing: border-box;
+    margin-bottom: 14px;
+}
+
+
+.divColumn{
+    -webkit-text-size-adjust: 100%;
+    font-size: 14px;
+    line-height: 20px;
+    color: #0F1111;
+    font-family: "Amazon Ember",Arial,sans-serif;
+    box-sizing: border-box;
+    width: 100%;
+    text-align: right;
+}
+.spanColumn{
+    -webkit-text-size-adjust: 100%;
+    font-size: 14px;
+    line-height: 20px;
+    font-family: "Amazon Ember",Arial,sans-serif;
+    text-align: right!important;
+    box-sizing: border-box;
+    color: #565959!important;
+    
+}
+
+.a-spacing-mini{
+    -webkit-text-size-adjust: 100%;
+    font-size: 14px;
+    line-height: 20px;
+    color: #0F1111;
+    font-family: "Amazon Ember",Arial,sans-serif;
+    box-sizing: border-box;
+    width: 100%;
+    margin-bottom: 4px!important;
+    text-align: right;
+}

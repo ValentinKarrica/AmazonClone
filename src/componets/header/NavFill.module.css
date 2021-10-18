@@ -1,0 +1,340 @@
+.nav-fill{
+    -webkit-text-size-adjust: 100%;
+    color: #0F1111;
+    font-family: inherit;
+    line-height: 1em;
+    font-size: 14px;
+    width: auto;
+    white-space: nowrap;
+    /* -webkit-box-sizing: border-box; */
+    overflow: visible;
+    display: flex;
+    position: static;
+    float: none;
+    flex: 1 1 auto;
+    height: 60px;
+}
+
+
+
+.nav-search{
+    -webkit-text-size-adjust: 100%;
+    color: #0F1111;
+    font-family: inherit;
+    line-height: 1em;
+    font-size: 14px;
+    white-space: nowrap;
+    overflow: hidden;
+    border-radius: 4px 4px 4px 4px;
+    /* -webkit-box-sizing: border-box; */
+    width: auto;
+    display: flex;
+    position: static;
+    float: none;
+    flex: 1 1 auto;
+    padding: 10px 4px 10px 3px;
+    height: 40px;
+}
+.nav-search-bar-form{
+    -webkit-text-size-adjust: 100%;
+    color: #0F1111;
+    font-family: inherit;
+    line-height: 1em;
+    font-size: 14px;
+    white-space: nowrap;
+    /* -webkit-box-sizing: border-box; */
+    height: 40px;
+    margin-bottom: 0;
+    border-radius: 4px 4px 4px 4px;
+    display: flex;
+    position: static;
+    float: none;
+    flex: 1 1 0px;
+}
+
+.nav-left{
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    -webkit-text-size-adjust: 100%;
+    color: #0F1111;
+    font-family: inherit;
+    line-height: 1em;
+    font-size: 14px;
+    white-space: nowrap;
+    width: auto;
+    /* -webkit-box-sizing: border-box; */
+    top: -5px;
+    height: auto;
+    display: flex;
+    position: static;
+    float: none;
+}
+
+
+.nav-fill{
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    -webkit-text-size-adjust: 100%;
+    color: #0F1111;
+    font-family: inherit;
+    line-height: 1em;
+    font-size: 14px;
+    width: auto;
+    white-space: nowrap;
+    /* -webkit-box-sizing: border-box; */
+    top: -5px;
+    overflow: hidden;
+    zoom: 1;
+    height: auto;
+    display: flex;
+    position: static;
+    float: none;
+    flex: 1 1 0px;
+}
+
+
+.nav-right{
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    -webkit-text-size-adjust: 100%;
+    color: #0F1111;
+    font-family: inherit;
+    line-height: 1em;
+    font-size: 14px;
+    white-space: nowrap;
+    width: auto;
+    /* -webkit-box-sizing: border-box; */
+    top: -5px;
+    height: auto;
+    display: flex;
+    position: static;
+    float: none;
+    min-width: auto;
+}
+
+
+.nav-search-field{
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    -webkit-text-size-adjust: 100%;
+    color: #0F1111;
+    font-family: inherit;
+    line-height: 1em;
+    font-size: 14px;
+    white-space: nowrap;
+    /* -webkit-box-sizing: border-box; */
+    top: 5px;
+    height: 40px;
+    background: #fff;
+    border: none;
+    border-top: 1px solid transparent;
+    display: flex;
+    position: static;
+    float: none;
+    flex: 1 1 0px;
+}
+
+.nav-input{
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    -webkit-text-size-adjust: 100%;
+    white-space: nowrap;
+    unicode-bidi: isolate;
+    vertical-align: middle;
+    transition: all .1s linear;
+    border-radius: 3px;
+    /* -webkit-box-sizing: border-box; */
+    top: 0;
+    left: 0;
+    width: 100%;
+    line-height: 15px;
+    padding: 7px 10px 10px 0;
+    margin: 0;
+    border: 0;
+    height: 21px;
+    font-family: inherit;
+    font-size: 15px;
+    background: 0 0;
+    color: #111;
+    outline: 0;
+    -webkit-appearance: none;
+    box-shadow: none;
+    text-indent: 8px;
+    direction: ltr;
+    display: flex;
+    position: static;
+    float: none;
+}
+
+.nav-search-submit{
+    -webkit-text-size-adjust: 100%;
+    color: #0F1111;
+    font-family: inherit;
+    line-height: 1em;
+    font-size: 14px;
+    white-space: nowrap;
+    background-repeat: repeat-x;
+    /* -webkit-box-sizing: border-box; */
+    top: 5px;
+    right: 0;
+    height: 40px;
+    overflow: hidden;
+    cursor: pointer;
+    border-radius: 0 4px 4px 0;
+    background-position: 0 -381px;
+    background-size: 350px;
+    background-color: #febd69;
+    background-image: none;
+    border: none;
+    width: 45px;
+    display: flex;
+    position: static;
+    float: none;
+}
+
+.nav-search-submit-text{
+    -webkit-text-size-adjust: 100%;
+    font-family: inherit;
+    line-height: 1em;
+    font-size: 14px;
+    white-space: nowrap;
+    cursor: pointer;
+    background-repeat: repeat-x;
+    /* -webkit-box-sizing: border-box; */
+    background-image: url("https://images-eu.ssl-images-amazon.com/images/G/02/gno/sprites/nav-sprite-global-2x-hm-dsk-reorg._CB405938119_.png");
+    background-size: 350px;
+    top: 10px;
+    left: 12px;
+    color: #111;
+    text-shadow: none;
+    text-indent: -500px;
+    display: flex;
+    position: static;
+    float: none;
+    flex: 1 1 auto;
+    width: auto;
+    height: auto;
+    background-position: 2px -280px;
+}
+
+
+.nav-search-submit-button{
+    -webkit-text-size-adjust: 100%;
+    font-family: inherit;
+    vertical-align: middle;
+    transition: all .1s linear;
+    -webkit-appearance: button;
+    /* -webkit-box-sizing: border-box; */
+    height: 100%;
+    width: 100%;
+    font-size: 14px;
+    padding: 0;
+    margin: 0;
+    cursor: pointer;
+    outline: 0;
+    color: #fff;
+    background: 0 0;
+    border: none;
+    text-indent: -1000px;
+    line-height: 1px;
+    display: flex;
+    position: static;
+    float: none;
+}
+
+
+.nav-search-dropdown-card{
+    -webkit-text-size-adjust: 100%;
+    color: #0F1111;
+    font-family: inherit;
+    line-height: 1em;
+    font-size: 14px;
+    white-space: nowrap;
+    /* -webkit-box-sizing: border-box; */
+}
+
+.nav-search-scope{
+    -webkit-text-size-adjust: 100%;
+    color: #0F1111;
+    font-family: inherit;
+    line-height: 1em;
+    font-size: 14px;
+    white-space: nowrap;
+    background-repeat: repeat-x;
+    /* -webkit-box-sizing: border-box; */
+    height: 40px;
+    margin: 0;
+    padding-left: 5px;
+    overflow: hidden;
+    border: 1px solid #cdcdcd;
+    border-radius: 4px 0 0 4px;
+    background-position: 0 -532px;
+    background-size: 350px;
+    background-color: #f3f3f3;
+    background-image: none;
+    border-left: 1px solid #f3f3f3;
+    border-top: 1px solid #f3f3f3;
+    border-bottom: 1px solid #f3f3f3;
+    display: flex;
+    position: relative;
+    float: none;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.nav-search-facade{
+    -webkit-text-size-adjust: 100%;
+    color: #0F1111;
+    font-family: inherit;
+    line-height: 1em;
+    font-size: 14px;
+    white-space: nowrap;
+    /* -webkit-box-sizing: border-box; */
+    position: relative;
+    float: left;
+    cursor: default;
+    overflow: hidden;
+    top: 3px;
+}
+
+.nav-search-label-id{
+    -webkit-text-size-adjust: 100%;
+    font-family: inherit;
+    cursor: default;
+    /* -webkit-box-sizing: border-box; */
+    display: block;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    color: #555;
+    font-size: 12px;
+    line-height: 33px;
+    margin-right: 21px;
+    margin-left: 5px;
+    min-width: 19px;
+}
+
+.nav-icon{
+    -webkit-text-size-adjust: 100%;
+    color: #0F1111;
+    font-family: inherit;
+    white-space: nowrap;
+    cursor: default;
+    font-style: italic;
+    background-image: url(https://images-eu.ssl-images-amazon.com/images/G/02/gno/sprites/nav-sprite-global-1x-hm-dsk-reorg._CB405938116_.png);
+    background-position: 0 1000px;
+    background-repeat: repeat-x;
+    /* -webkit-box-sizing: border-box; */
+    position: absolute;
+    top: 14px;
+    right: 8px;
+    border-style: solid;
+    border-width: 4px;
+    border-color: transparent;
+    border-top: 4px solid #666;
+    border-bottom-width: 0;
+    width: 0;
+    height: 0;
+    font-size: 0;
+    line-height: 0;
+}
+
+
+

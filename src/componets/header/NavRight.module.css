@@ -1,0 +1,370 @@
+.nav-right{
+    -webkit-text-size-adjust: 100%;
+    color: #0F1111;
+    font-family: inherit;
+    line-height: 1em;
+    font-size: 14px;
+    width: auto;
+    /* -webkit-box-sizing: border-box; */
+    min-width: auto;
+    display: flex;
+    position: static;
+    float: none;
+    height: 60px;
+}
+
+.nav-tool{
+    -webkit-text-size-adjust: 100%;
+    color: #0F1111;
+    font-family: inherit;
+    line-height: 1em;
+    font-size: 14px;
+    /* -webkit-box-sizing: border-box; */
+    text-decoration: none;
+    margin-top: 2px;
+    padding: 3px 0 0 0;
+    display: flex;
+    position: static;
+    float: none;
+}
+
+.nav-a{
+    -webkit-text-size-adjust: 100%;
+    font-size: 14px;
+    font-family: inherit;
+    cursor: pointer;
+    color: #d6d6d6;
+    line-height: 44px;
+    overflow: hidden;
+    top: 1px;
+    /* -webkit-box-sizing: border-box; */
+    height: 50px;
+    padding: 0 9px 10px;
+    display: flex;
+    position: static;
+    float: none;
+    flex-shrink: 0;
+    flex-flow: column nowrap;
+    -webkit-box-pack: center;
+    justify-content: center;
+    text-decoration: none;
+    padding-right: 9px;
+    margin: 0 1px 0 1px;
+    padding-bottom: 5px;
+    margin-right: 0;
+    margin-left: 1px;
+    padding-left: 9px;
+}
+
+
+.icp-nav-link-inner{
+    -webkit-text-size-adjust: 100%;
+    font-size: 14px;
+    font-family: inherit;
+    cursor: pointer;
+    color: #d6d6d6;
+    line-height: 44px;
+    /* -webkit-box-sizing: border-box; */
+    -webkit-box-align: center;
+    align-items: center;
+    padding: 0;
+    display: flex;
+    position: static;
+    float: none;
+    flex-flow: column nowrap;
+    -webkit-box-pack: center;
+    justify-content: center;
+    margin: 0;
+    padding-right: 0;
+}
+
+.nav-line-1{
+    -webkit-text-size-adjust: 100%;
+    cursor: pointer;
+    /* -webkit-box-sizing: border-box; */
+    clear: both;
+    white-space: nowrap;
+    font-family: inherit;
+    font-size: 12px;
+    line-height: 14px;
+    height: 14px;
+    font-weight: 400;
+    color: #fff;
+    display: flex;
+    position: static;
+    float: none;
+    -webkit-box-align: center;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    padding-bottom: 2px;
+}
+
+.nav-line-2{
+    -webkit-text-size-adjust: 100%;
+    cursor: pointer;
+    left: -7px;
+    /* -webkit-box-sizing: border-box; */
+    clear: both;
+    white-space: nowrap;
+    font-family: inherit;
+    font-size: 14px;
+    line-height: 15px;
+    font-weight: 700;
+    color: #fff;
+    display: flex;
+    position: static;
+    float: none;
+    -webkit-box-align: center;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    margin-left: 1px;
+}
+
+.icp-nav-flag{
+    -webkit-text-size-adjust: 100%;
+    cursor: pointer;
+    white-space: nowrap;
+    font-family: inherit;
+    font-size: 14px;
+    line-height: 15px;
+    font-weight: 700;
+    color: #fff;
+    width: 24px;
+    height: 18px;
+    background-image: url(https://m.media-amazon.com/images/S/sash/rzrQQdi0aRm6Dap.png);
+    background-position: -24px -130px;
+    /* -webkit-box-sizing: border-box; */
+    display: flex;
+    position: static;
+    float: none;
+    -webkit-box-align: center;
+    align-items: center;
+    padding: 0;
+    margin: 0 2px 1px 0;
+}
+
+.nav-icon{
+    -webkit-text-size-adjust: 100%;
+    cursor: pointer;
+    white-space: nowrap;
+    font-family: inherit;
+    font-weight: 700;
+    color: #fff;
+    background-image: url(https://images-eu.ssl-images-amazon.com/images/G/02/gno/sprites/nav-sprite-global-1x-hm-dsk-reorg._CB405938116_.png);
+    background-position: 0 1000px;
+    background-repeat: repeat-x;
+    left: 38px;
+    /* -webkit-box-sizing: border-box; */
+    border-style: solid;
+    border-width: 4px;
+    border-color: transparent;
+    border-top: 4px solid #606060;
+    border-bottom-width: 0;
+    width: 0;
+    height: 0;
+    font-size: 0;
+    line-height: 0;
+    visibility: hidden;
+    border-top-color: #a7acb2;
+    display: flex;
+    position: static;
+    float: none;
+    -webkit-box-align: center;
+    align-items: center;
+    padding: 0;
+    margin: 6px 0 0 2px;
+}
+
+
+.nav-line-1-container{
+    -webkit-text-size-adjust: 100%;
+    font-size: 14px;
+    font-family: inherit;
+    cursor: pointer;
+    color: #d6d6d6;
+    line-height: 44px;
+    /* -webkit-box-sizing: border-box; */
+    display: flex;
+    float: none;
+    -webkit-box-align: center;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    position: relative;
+    width: 100%;
+    height: 14px;
+    margin-top: 9px;
+}
+
+.nav-line-3{
+    -webkit-text-size-adjust: 100%;
+    cursor: pointer;
+    /* -webkit-box-sizing: border-box; */
+    clear: both;
+    white-space: nowrap;
+    font-family: inherit;
+    font-size: 12px;
+    line-height: 14px;
+    height: 14px;
+    font-weight: 400;
+    color: #fff;
+    display: flex;
+    position: static;
+    float: none;
+    -webkit-box-align: center;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-line-4{
+    -webkit-text-size-adjust: 100%;
+    cursor: pointer;
+    /* -webkit-box-sizing: border-box; */
+    clear: both;
+    white-space: nowrap;
+    font-family: inherit;
+    font-size: 14px;
+    line-height: 15px;
+    font-weight: 700;
+    color: #fff;
+    display: flex;
+    position: static;
+    float: none;
+    -webkit-box-align: center;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    width: auto;
+    min-width: 0;
+}
+
+.nav-cart-count-container{
+    -webkit-text-size-adjust: 100%;
+    height: 39px;
+    font-size: 14px;
+    font-family: inherit;
+    cursor: pointer;
+    color: #d6d6d6;
+    line-height: 44px;
+    /* -webkit-box-sizing: border-box; */
+    padding: 0;
+    margin: 0;
+    display: flex;
+    float: none;
+    flex-flow: column nowrap;
+    -webkit-box-pack: end;
+    justify-content: flex-end;
+    -webkit-box-align: start;
+    align-items: flex-start;
+    position: relative;
+    padding-bottom: 0;
+}
+
+.nav-cart-count{
+    -webkit-text-size-adjust: 100%;
+    cursor: pointer;
+    /* -webkit-box-sizing: border-box; */
+    font-weight: 700;
+    font-family: inherit;
+    text-align: center;
+    width: 19px;
+    color: #f08804;
+    display: flex;
+    float: none;
+    -webkit-box-align: center;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    right: auto;
+    top: 8px;
+    -webkit-box-pack: center;
+    justify-content: center;
+    left: 14px;
+    font-size: 18px;
+    line-height: 16px;
+}
+
+.nav-cart-icon{
+    -webkit-text-size-adjust: 100%;
+    font-size: 14px;
+    font-family: inherit;
+    cursor: pointer;
+    color: #d6d6d6;
+    line-height: 44px;
+    background-repeat: repeat-x;
+    /* -webkit-box-sizing: border-box; */
+    background-image: url("https://images-eu.ssl-images-amazon.com/images/G/02/gno/sprites/nav-sprite-global-2x-hm-dsk-reorg._CB405938119_.png");
+    background-size: 350px;
+    overflow: hidden;
+    left: 10px;
+    top: 11px;
+    display: flex;
+    position: static;
+    float: none;
+    -webkit-box-align: center;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    width: 41px;
+    height: 28px;
+    background-position: -218px -337px;
+}
+
+.nav-progressive-attribute{
+    -webkit-text-size-adjust: 100%;
+    font-size: 14px;
+    font-family: inherit;
+    cursor: pointer;
+    color: #d6d6d6;
+    line-height: 44px;
+    overflow: hidden;
+    top: 1px;
+    margin: 0 1px;
+    /* -webkit-box-sizing: border-box; */
+    height: 50px;
+    display: flex;
+    position: static;
+    float: none;
+    flex-shrink: 0;
+    -webkit-box-pack: center;
+    justify-content: center;
+    text-decoration: none;
+    flex-flow: row nowrap;
+    padding: 0 9px 11px 10px;
+    margin-left: 0;
+    padding-left: 9px;
+    margin-right: 3px;
+    padding-right: 9px;
+}
+.nav-cart-text-container{
+    -webkit-text-size-adjust: 100%;
+    height: 39px;
+    font-size: 14px;
+    font-family: inherit;
+    cursor: pointer;
+    color: #d6d6d6;
+    line-height: 44px;
+    /* -webkit-box-sizing: border-box; */
+    padding: 0;
+    margin: 0;
+    display: flex;
+    position: static;
+    float: none;
+    flex-flow: column nowrap;
+    -webkit-box-pack: end;
+    justify-content: flex-end;
+    -webkit-box-align: start;
+    align-items: flex-start;
+}
+
+.nav-a:hover, .nav-progressive-attribute:hover{
+    padding: 0 7px 0 5px;
+    border: 1px solid;
+    border-radius: 2px;
+    border-color: #fff;
+    outline: 0;
+}
