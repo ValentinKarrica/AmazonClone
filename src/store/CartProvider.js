@@ -256,7 +256,7 @@ return defaultProducts
 
 const CartProvider=(props)=>{
 
-    const test = 'valentino'
+    const test = 'vale'
     const [productsState, despachProductsAction] = useReducer(productsReducer, defaultProducts)
 
 

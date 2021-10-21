@@ -1,20 +1,16 @@
 
-import { useContext } from "react"
-import CartContext from "../../store/cart-context"
 import CardMainPage from "../UI/CardMainPage"
+import { useSelector } from 'react-redux'
 
 
 
 const Products = ()=>{
+    const porductsRed = useSelector((state)=> state.show.showPoducts)
+
     
-    const cartCtx = useContext(CartContext)
-    let foundProd = cartCtx.foundProd;
+    console.log(porductsRed)
 
-
-    console.log(foundProd);
-
-
-    const productList = cartCtx.products.map((product) => (
+    const productList = porductsRed.map((product) => (
         <CardMainPage
             id={product.id}
             key={product.id}
@@ -32,4 +28,3 @@ const Products = ()=>{
 }
 
 export default Products;
-
