@@ -68,18 +68,29 @@ const mainPageSlice = createSlice({
     name: 'showMainPage',
     initialState: {
         showPoducts: dummyProducts,
-        firstPrice: []
+        firstPrice: [],
+        getSuccess: false
     },
     reducers: {
         actionShowProducts(state, action){
-            console.log(state.showPoducts)
-            state.firstPrice = state.showPoducts.map((product)=>[ product.price])
-            console.log(state.firstPrice)
-        
+            const dataTran =action.payload.sponsored_products.map((product)=> {
+                return{
+                    name: product.title,
+                    id: Math.random().toString(36),
+                    value: 1,
+                    image: <img src={product.image}></img>,
+                    price: product.price.value,
+                }
+            })
+            state.showPoducts = state.showPoducts.concat(dataTran)
+            state.firstPrice = state.showPoducts.map((price)=>
+                price.price
+            )
+            state.getSuccess = true;
         }
     }
 })
 
-export const actions = mainPageSlice.actions
+export const showActions = mainPageSlice.actions
 
 export default mainPageSlice;

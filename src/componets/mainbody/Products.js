@@ -1,14 +1,14 @@
 
 import CardMainPage from "../UI/CardMainPage"
 import { useSelector } from 'react-redux'
+import LoadingSpinner from "../UI/LoadingSpiner";
 
 
 
 const Products = ()=>{
-    const porductsRed = useSelector((state)=> state.show.showPoducts)
+    const porductsRed = useSelector((state)=> state.show.showPoducts);
+    const getSuccess = useSelector((state)=> state.show.getSuccess);
 
-    
-    console.log(porductsRed)
 
     const productList = porductsRed.map((product) => (
         <CardMainPage
@@ -22,7 +22,8 @@ const Products = ()=>{
     />))
 
     return <div>
-        {productList}
+        
+        {getSuccess ? productList : <LoadingSpinner/> }
         
     </div>
 }
