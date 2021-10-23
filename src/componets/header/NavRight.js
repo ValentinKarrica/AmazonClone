@@ -1,12 +1,12 @@
-import { Fragment, useContext } from "react"
-import CartContext from "../../store/cart-context"
+import { Fragment } from "react"
+import { useSelector } from "react-redux"
 import style from './NavRight.module.css'
 import { Link } from "react-router-dom"
 
 
 const NavRight = (props)=>{
-    const cartCtx = useContext(CartContext)
 
+    const tottalItems = useSelector(state=> state.show.tottalItems)
 
     
     return <Fragment>
@@ -21,7 +21,7 @@ const NavRight = (props)=>{
                         </span>
                     </span>
                 </Link>
-                <a href='#' className={style['nav-a']}>
+                <a href='/home' className={style['nav-a']}>
                     <div className={style['nav-line-1-container']}>
                         <span className={style['nav-line-3']}>Hello, Sing in</span>
                     </div>
@@ -30,7 +30,7 @@ const NavRight = (props)=>{
                         <span className={style['nav-icon']}></span>
                     </span>
                 </a>
-                <a href='#' className={style['nav-a']}>
+                <a href='/home' className={style['nav-a']}>
                     <div className={style['nav-line-1-container']}>
                         <span className={style['nav-line-3']}>Returns</span>
                     </div>
@@ -38,7 +38,7 @@ const NavRight = (props)=>{
                 </a>
                 <Link to='/Shopping-Basket' className={style["nav-progressive-attribute"]}>
                     <div className={style['nav-cart-count-container']}>
-                        <span className={style['nav-cart-count']}>0</span>
+                        <span className={style['nav-cart-count']}>{tottalItems}</span>
                         <span className={style['nav-cart-icon']}></span>
                     </div>
                     <div className={style['nav-cart-text-container']}>

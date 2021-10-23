@@ -1,15 +1,17 @@
-import { useContext } from 'react';
-import CartContext from '../../store/cart-context';
+import { useSelector } from 'react-redux';
+import { Link } from 'react-router-dom';
 import style from './CardBasket.module.css'
 import CardBasketProduct from './CardBasketProduct';
 
 
 const CartBasket = (props) =>{
-    const cartCntx = useContext(CartContext)
-    const tottalItems= cartCntx.basketProducts.length
+    const basketProducts = useSelector(state=>state.show.basketProducts)
+    const tottalItems= useSelector(state=>state.show.tottalItems)
+    const tottalPrice = useSelector(state=>state.show.tottalPrice).toFixed(2)
+    const priceSym = useSelector(state=>state.show.priceSym)
     
 
-    const basketList = cartCntx.basketProducts.map((list)=>(
+    const basketList = basketProducts.map((list)=>(
         <CardBasketProduct
         id={list.id}
         key={list.id}
@@ -17,7 +19,7 @@ const CartBasket = (props) =>{
         price={list.price}
         name={list.name}
         department={list.department}
-        symbol={cartCntx.priceSym}
+        symbol={priceSym}
         value={list.value}
     />))
 
@@ -29,7 +31,7 @@ const CartBasket = (props) =>{
                 <h1>Shopping Basket</h1>
             </div>
             <div className={style.arow}>
-                <a className={style.aLinkrow} href='#'>Deselect all items</a>
+                <a className={style.aLinkrow} href='/home'>Deselect all items</a>
             </div>
         </div>
 
@@ -40,10 +42,10 @@ const CartBasket = (props) =>{
         {basketList}
         <div className={style['a-spacing-mini']}>
             <span>Subtotal ({tottalItems} items): </span>
-            <span>{cartCntx.priceSym}{cartCntx.totalAmount}</span>
+            <span>{priceSym}{tottalPrice}</span>
         </div>
         <div className={style['a-spacing-mini']}>
-            <button onClick={props.onCloseBasket}>Close Basket</button>
+            <Link to='/home'><button>Close Basket</button></Link>
         </div>
 
 

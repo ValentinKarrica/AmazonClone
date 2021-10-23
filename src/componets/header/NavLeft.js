@@ -21,7 +21,7 @@ const NavLeft = () =>{
                 </Link>
             </div>
             <span className={style['a-declaredive']} onClick={openLocModalHadler}>
-                <a className={style['nav-a']}>
+                <a href='/home' className={style['nav-a']}>
                     <div className={style['nav-loc-icon']}></div>
                     <div className={style.lines}>
                         <span className={style['nav-line1']}>Hello</span>

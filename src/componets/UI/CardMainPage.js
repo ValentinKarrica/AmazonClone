@@ -1,13 +1,15 @@
-import { Fragment, useContext } from "react"
-import { useSelector } from "react-redux"
+import { Fragment } from "react"
+import { useSelector, useDispatch } from "react-redux"
 import { Link } from "react-router-dom"
+import { showActions } from "../../store/mainPage-slice"
 
 import style from './CardMainPage.module.css'
 
 const CardMainPage = (props)=>{
     const priceSym = useSelector((state)=> state.show.priceSym)
+    const dispatch = useDispatch()
     const moveToBasket=()=>{
-        // cartCtx.moveToBasket(props.id, props.value)
+        dispatch(showActions.addToBasket({id: props.id, value: props.value}))
     }
     const price = props.price.toFixed(2)
 

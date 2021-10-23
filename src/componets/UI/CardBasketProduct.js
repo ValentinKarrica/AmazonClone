@@ -1,18 +1,20 @@
-import { useContext, useState } from 'react'
-import CartContext from '../../store/cart-context'
+import { useState } from 'react'
+import { useDispatch } from 'react-redux'
+import { showActions } from '../../store/mainPage-slice'
+
 import style from './CardBasketProducts.module.css'
 
 
 const CardBasketProduct =(props)=>{
-
-    const cartCntx = useContext(CartContext)
+    const dispatch = useDispatch()
+    
 
     const [defaultValue, setDefaultValue]=useState(props.value)
     const price = props.price.toFixed(2)
 
     const onHandlerValue=(event)=>{
         setDefaultValue(event.target.value)
-        cartCntx.addFromBasket(props.id, event.target.value)
+        dispatch(showActions.addFromBasket({id : props.id, value: event.target.value}))
     }
 
 
@@ -32,7 +34,7 @@ const CardBasketProduct =(props)=>{
                             <li><span className={style.lispan3}>in stock</span></li>
                             <li>
                                 <input className={style.column1aa2b} type='checkbox'></input>
-                                <span className={style.column1aa2a}>This will be a gift <a href='#'>Learn more</a></span>
+                                <span className={style.column1aa2a}>This will be a gift <a href='/home'>Learn more</a></span>
                             </li>
                         </ul>
                         <div className={style.sselct1}>

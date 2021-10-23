@@ -1,4 +1,4 @@
-import style from './CartProvider.module.css'
+import style from './dummyProducts.module.css'
 export const dummyProducts = [
     {
         department: 'Books',

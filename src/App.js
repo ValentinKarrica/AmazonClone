@@ -3,7 +3,6 @@ import CartBasket from "./componets/UI/CardBasket"
 import style from './componets/mainbody/MainBody.module.css'
 import PriceSymSel from "./componets/mainbody/PriceSymSel"
 import Products from "./componets/mainbody/Products"
-import CartProvider from "./store/CartProvider";
 import ProductsDetail from "./componets/UI/ProductsDetails";
 import { Switch, Route, Redirect } from "react-router-dom";
 import {useEffect } from 'react'
@@ -21,8 +20,7 @@ useEffect(()=>{
 },[])
 
   
-  return (<CartProvider>
-    <div className="App">
+  return (<div className="App">
       <header >
        <MainHeader />
       </header>
@@ -53,7 +51,6 @@ useEffect(()=>{
         main footer
       </footer>
     </div>
-  </CartProvider>
   );
 }
 

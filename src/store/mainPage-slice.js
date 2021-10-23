@@ -8,7 +8,10 @@ const mainPageSlice = createSlice({
         products: dummyProducts,
         firstPrice: [],
         priceSym: '£',
-        getSuccess: false
+        getSuccess: false,
+        basketProducts: [],
+        tottalPrice: 0,
+        tottalItems: 0,
     },
     reducers: {
         actionShowProducts(state, action){
@@ -30,26 +33,104 @@ const mainPageSlice = createSlice({
 
         actionChangePrice(state, action){
             if(action.payload === 'pound'){
+                state.tottalPrice = 0
                 state.priceSym = '£'
                 for(let i = 0; i<state.products.length; i++){
                     state.products[i].price = state.firstPrice[i]
+                    const findBasketPro = state.basketProducts.findIndex(product=> product.id === state.products[i].id)
+                    const existingProduct = state.basketProducts[findBasketPro]; 
+                    if(existingProduct){
+                        const updateProduct = {...existingProduct, 
+                                                price: state.firstPrice[i]*existingProduct.value,
+                                                }
+                        state.basketProducts = [...state.basketProducts]
+                        state.basketProducts[findBasketPro] = updateProduct
+                        state.tottalPrice = state.tottalPrice + updateProduct.price
+                    }
                 }
+
                 
             }
 
             else if(action.payload === 'euro'){
+                state.tottalPrice = 0
                 state.priceSym = '€'
                 for(let i = 0; i<state.products.length; i++){
                     state.products[i].price = state.firstPrice[i] * 1.17
+                    const findBasketPro = state.basketProducts.findIndex(product=> product.id === state.products[i].id)
+                    const existingProduct = state.basketProducts[findBasketPro]; 
+                    if(existingProduct){
+                        const updateProduct = {...existingProduct, 
+                                                price: state.firstPrice[i]*existingProduct.value * 1.17
+                                                }
+                        state.basketProducts = [...state.basketProducts]
+                        state.basketProducts[findBasketPro] = updateProduct
+                        state.tottalPrice = state.tottalPrice + updateProduct.price
+                    }
                 }
             }
 
             else if(action.payload === 'dollar'){
+                state.tottalPrice = 0
                 state.priceSym = '$'
                 for(let i = 0; i<state.products.length; i++){
                     state.products[i].price = state.firstPrice[i] * 1.37
+                    const findBasketPro = state.basketProducts.findIndex(product=> product.id === state.products[i].id)
+                    const existingProduct = state.basketProducts[findBasketPro]; 
+                    if(existingProduct){
+                        const updateProduct = {...existingProduct, 
+                                                price: state.firstPrice[i]*existingProduct.value * 1.37
+                                                }
+                        state.basketProducts = [...state.basketProducts]
+                        state.basketProducts[findBasketPro] = updateProduct
+                        state.tottalPrice = state.tottalPrice + updateProduct.price
+                    }
                 }
+
             }
+        },
+
+        addToBasket(state, action){
+            
+
+            const findProduct = state.products.findIndex(products=>products.id === action.payload.id);
+
+            state.tottalPrice = state.tottalPrice + (state.products[findProduct].price*action.payload.value);
+            state.tottalItems = state.tottalItems + action.payload.value;
+
+            const findBasketProduct = state.basketProducts.findIndex(products=>products.id === action.payload.id)
+            const existingProduct = state.basketProducts[findBasketProduct];
+            
+            if(existingProduct){
+                const updateProduct = {...existingProduct, 
+                                        price: state.products[findProduct].price + existingProduct.price,
+                                        value: existingProduct.value + 1}
+                state.basketProducts = [...state.basketProducts]
+                state.basketProducts[findBasketProduct] = updateProduct
+            }
+            else{
+                state.basketProducts = state.basketProducts.concat(state.products[findProduct]);
+            }
+        },
+        addFromBasket(state, action){
+            const findProduct = state.products.findIndex(products=>products.id === action.payload.id)
+            const productPrice = state.products[findProduct].price
+            
+            const findBasketProduct = state.basketProducts.findIndex(products=>products.id === action.payload.id)
+            const existingProduct = state.basketProducts[findBasketProduct]
+            
+            console.log(existingProduct.value)
+            const updateTotItems = state.tottalItems - existingProduct.value
+            const updateTotPrice = state.tottalPrice - existingProduct.price
+            
+            const updateProdact = {...existingProduct, price: productPrice * action.payload.value, value: action.payload.value }
+            state.basketProducts=[...state.basketProducts]
+            state.basketProducts[findBasketProduct] = updateProdact
+
+            state.tottalItems = updateTotItems + Number(updateProdact.value)
+            console.log(state.tottalItems)
+            state.tottalPrice = updateTotPrice + updateProdact.price
+            console.log(state.tottalPrice)
         }
     }
 })
