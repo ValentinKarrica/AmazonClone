@@ -6,7 +6,7 @@ import LoadingSpinner from "../UI/LoadingSpiner";
 
 
 const Products = ()=>{
-    const porductsRed = useSelector((state)=> state.show.showPoducts);
+    const porductsRed = useSelector((state)=> state.show.products);
     const getSuccess = useSelector((state)=> state.show.getSuccess);
 
 

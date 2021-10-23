@@ -1,11 +1,17 @@
-import { Fragment, useContext } from "react"
-import CartContext from "../../store/cart-context"
+import { Fragment } from "react"
+import { useDispatch } from "react-redux";
+import { Link, withRouter } from "react-router-dom";
+
+import { showActions } from "../../store/mainPage-slice";
 import style from './PriceSymSel.module.css'
 
-const PriceSymSel = (props)=>{
-    const cartCtx = useContext(CartContext);
-    let symValue='pound'
 
+let defValue = 'pound';
+
+const PriceSymSel = withRouter((props)=>{
+
+    const dispatch = useDispatch()
+    let symValue = 'pound'
 
 
     const onValueHandler =(event)=>{
@@ -13,8 +19,12 @@ const PriceSymSel = (props)=>{
     }
     const onHadlerPrice = (event)=>{
         event.preventDefault();
-        cartCtx.changeSym(symValue)
+
+        dispatch(showActions.actionChangePrice(symValue));
+        defValue = symValue;
+        props.history.push ('/home'); 
     }
+
     return <Fragment>
         <div className={style['a-column']}>
             <form onSubmit={onHadlerPrice} className={style['style-form']}>
@@ -26,7 +36,7 @@ const PriceSymSel = (props)=>{
                     <br/>
                     <br/>
                     <br/>
-                    <select  onChange={onValueHandler} className={style['a-dropdown-container']}>
+                    <select  onChange={onValueHandler} defaultValue={defValue} className={style['a-dropdown-container']}>
                         <option value='pound'>£-Pound</option>
                         <option value='euro'>€-Euro</option>
                         <option value='dollar'>$-Dollar</option>
@@ -35,11 +45,13 @@ const PriceSymSel = (props)=>{
                 <br/>
                 <br/>
                 <br/>
-                <button className={style['a-button-base']} onClick = {props.onCloseSet}>Cancel</button>
-                <button type='submit' className={style['a-button-primary']}>Save changes</button>
+                <Link to='/home'>
+                    <button className={style['a-button-base']}>Cancel</button>
+                </Link>
+                    <button type='submit' className={style['a-button-primary']}>Save changes</button>
             </form>
         </div>
     </Fragment>
-}
+})
 
 export default PriceSymSel;

@@ -1,12 +1,13 @@
 import { Fragment, useContext } from "react"
+import { useSelector } from "react-redux"
 import { Link } from "react-router-dom"
-import CartContext from "../../store/cart-context"
+
 import style from './CardMainPage.module.css'
 
 const CardMainPage = (props)=>{
-    const cartCtx = useContext(CartContext)
+    const priceSym = useSelector((state)=> state.show.priceSym)
     const moveToBasket=()=>{
-        cartCtx.moveToBasket(props.id, props.value)
+        // cartCtx.moveToBasket(props.id, props.value)
     }
     const price = props.price.toFixed(2)
 
@@ -22,7 +23,7 @@ const CardMainPage = (props)=>{
             </div>
             <div className={style["down-a-section"]}>
                 <div>{props.department}</div>
-                <div className={style["a1-section"]}>{cartCtx.priceSym}{price}</div>
+                <div className={style["a1-section"]}>{priceSym}{price}</div>
                 <div className={style["a2-section"]}>{props.name}</div>
                 <div className={style["a3-section"]}>
                     <i className={style["a-star-mini-4-5"]}></i>

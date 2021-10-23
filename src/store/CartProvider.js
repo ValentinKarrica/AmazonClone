@@ -270,7 +270,7 @@ const CartProvider=(props)=>{
         }
         try{
             const response = await axios.get('https://api.rainforestapi.com/request', { params })
-            despachProductsAction({type:'GET_SUCCESS', dataProd: response.data})
+            
         } catch(err){
             console.log(err)
         }
