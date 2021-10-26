@@ -16,7 +16,9 @@ const CardBasketProduct =(props)=>{
         setDefaultValue(event.target.value)
         dispatch(showActions.addFromBasket({id : props.id, value: event.target.value}))
     }
-
+    const removeProduct=()=>{
+        dispatch(showActions.deleteFromBasket(props.id));
+    }
 
 
     return <div className={style.mainDiv}>
@@ -54,7 +56,7 @@ const CardBasketProduct =(props)=>{
                                 </select>
                             </span>
                             <i className={style.isecion}></i>
-                            <span className={style.spansecion}>Delete</span>
+                            <span onClick = {removeProduct} className={style.spansecion}>Delete</span>
                             <i className={style.isecion}></i>
                             <span className={style.spansecion}>Save for later</span>
                             <i className={style.isecion}></i>

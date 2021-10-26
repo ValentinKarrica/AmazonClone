@@ -131,6 +131,12 @@ const mainPageSlice = createSlice({
             console.log(state.tottalItems)
             state.tottalPrice = updateTotPrice + updateProdact.price
             console.log(state.tottalPrice)
+        },
+        deleteFromBasket(state, action){
+            const findBasketProd = state.basketProducts.findIndex(products=>products.id === action.payload)
+            state.tottalItems = state.tottalItems - state.basketProducts[findBasketProd].value;
+            state.tottalPrice = state.tottalPrice - state.basketProducts[findBasketProd].price;
+            state.basketProducts.splice(findBasketProd,1);
         }
     }
 })
