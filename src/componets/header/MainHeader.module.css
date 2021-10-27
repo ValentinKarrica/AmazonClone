@@ -3,7 +3,6 @@
     color: #0F1111;
     font-family: inherit;
     line-height: 1em;
-    width: 100%;
     font-size: 14px;
     z-index: 5;
     display: flex;
@@ -14,6 +13,7 @@
     height: 60px;
     background-color: #131921;
     padding: 0px;
+    width: 100%;
 }
 
 .nav-main{
@@ -24,7 +24,6 @@
     line-height: 1em;
     background-repeat: repeat-x;
     /* -webkit-box-sizing: border-box; */
-    width: 100%;
     transform: translate3d(0,0,0);
     z-index: 4;
     background-position: 0 -725px;
@@ -38,4 +37,133 @@
     height: 39px;
     padding-top: 0;
     padding-left: 1px;
+    width: 100%;
+}
+
+
+.menu{
+    -webkit-text-size-adjust: 100%;
+    font-family: inherit;
+    line-height: 1em;
+    /* -webkit-box-sizing: border-box; */
+    font-size: 25px;
+    color: #fff;
+    border-radius: 3px;
+    align-items: center;
+    width: auto;
+    height: auto;
+    border: none;
+    text-decoration: none;
+    padding: 8px 9px 8px 9px;
+    margin: 5px 0 6px 0;
+    display: flex;
+    position: static;
+    float: none;
+}
+
+.iconMenu{
+    -webkit-text-size-adjust: 100%;
+    font-family: inherit;
+    line-height: 1em;
+    font-size: 25px;
+    color: #fff;
+    font-style: italic;
+    background-repeat: repeat-x;
+    /* -webkit-box-sizing: border-box; */
+    background-image: url("https://images-eu.ssl-images-amazon.com/images/G/02/gno/sprites/nav-sprite-global-2x-hm-dsk-reorg._CB405938119_.png");
+    background-size: 350px;
+    display: flex;
+    position: static;
+    float: none;
+    width: 17px;
+    height: 14px;
+    background-position: -172px -255px;
+}
+.allMenu{
+    -webkit-text-size-adjust: 100%;
+    line-height: 1em;
+    /* -webkit-box-sizing: border-box; */
+    color: #fff;
+    font-family: inherit;
+    font-weight: 700;
+    font-size: 14px;
+    padding-left: 5px;
+    white-space: nowrap;
+}
+
+
+.menuallCat{
+    -webkit-text-size-adjust: 100%;
+    line-height: 1em;
+    white-space: nowrap;
+    cursor: pointer;
+    float: left;
+    font-family: inherit;
+    font-size: 14px;
+    text-decoration: none;
+    color: #fff;
+    scroll-margin: 0;
+    height: 12px;
+    box-sizing: content-box;
+    margin: 5px 0 6px 0;
+    padding: 8px 9px;
+}
+.prime{
+    -webkit-text-size-adjust: 100%;
+    line-height: 1em;
+    white-space: nowrap;
+    cursor: pointer;
+    font-family: inherit;
+    font-size: 14px;
+    color: #fff;
+    /* -webkit-box-sizing: border-box; */
+}
+
+.iconPrime{
+    -webkit-text-size-adjust: 100%;
+    white-space: nowrap;
+    cursor: pointer;
+    font-family: inherit;
+    color: #fff;
+    background-image: url(https://images-eu.ssl-images-amazon.com/images/G/02/gno/sprites/nav-sprite-global-1x-hm-dsk-reorg._CB405938116_.png);
+    background-position: 0 1000px;
+    background-repeat: repeat-x;
+    /* -webkit-box-sizing: border-box; */
+    border-style: solid;
+    border-width: 4px;
+    border-color: transparent;
+    border-top: 4px solid #606060;
+    border-bottom-width: 0;
+    width: 0;
+    height: 0;
+    font-size: 0;
+    line-height: 0;
+    margin: 0 0 2px 5px;
+    border-top-color: #a7acb2;
+    display: inline-flex;
+    visibility: visible;
+}
+
+.menuimage{
+    -webkit-text-size-adjust: 100%;
+    font-family: inherit;
+    font-size: 12px;
+    line-height: 1em;
+    text-align: right;
+    text-decoration: none;
+    color: #007185;
+    /* -webkit-box-sizing: border-box; */
+    display: block;
+    height: 100%;
+}
+
+
+
+.menu:hover, .menu:active, .menuallCat:hover, .menuallCat:active, .menuimage:active, .menuimage:hover{
+   
+    border: 1px solid;
+    border-radius: 1px;
+    border-color: #fff;
+    outline: 0;
+    cursor: pointer;
 }

@@ -50,6 +50,7 @@
     position: static;
     float: none;
     flex: 1 1 0px;
+    overflow: hidden;
 }
 
 .nav-left{
