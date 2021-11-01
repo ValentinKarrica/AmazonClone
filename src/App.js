@@ -8,6 +8,7 @@ import { Switch, Route, Redirect } from "react-router-dom";
 import {useEffect } from 'react'
 import {useDispatch} from 'react-redux'
 import {getProducts} from './store/mainPage-slice'
+import Footer from "./componets/footer/Footer";
 
 
 
@@ -47,9 +48,7 @@ useEffect(()=>{
           </Switch>
         </div>
       </main>
-      <footer>
-        main footer
-      </footer>
+      <Footer/>
     </div>
   );
 }
