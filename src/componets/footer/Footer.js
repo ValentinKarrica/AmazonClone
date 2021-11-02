@@ -15,9 +15,27 @@ const Footer = ()=>{
                         <li>Sustainability</li>
                     </ul>
                 </div>
-                <div></div>
-                <div></div>
-                <div></div>
+                <div><ul>
+                        <li>Get to Know Us</li>
+                        <li>Careers</li>
+                        <li>About Us</li>
+                        <li>UK Modern Slavery Statement</li>
+                        <li>Sustainability</li>
+                    </ul></div>
+                <div><ul>
+                        <li>Get to Know Us</li>
+                        <li>Careers</li>
+                        <li>About Us</li>
+                        <li>UK Modern Slavery Statement</li>
+                        <li>Sustainability</li>
+                    </ul></div>
+                <div><ul>
+                        <li>Get to Know Us</li>
+                        <li>Careers</li>
+                        <li>About Us</li>
+                        <li>UK Modern Slavery Statement</li>
+                        <li>Sustainability</li>
+                    </ul></div>
             </div>
         </div>
     )
