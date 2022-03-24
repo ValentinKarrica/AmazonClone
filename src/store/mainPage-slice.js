@@ -8,7 +8,7 @@ const mainPageSlice = createSlice({
         products: dummyProducts,
         firstPrice: [],
         priceSym: '£',
-        getSuccess: false,
+        getSuccess: true,
         basketProducts: [],
         tottalPrice: 0,
         tottalItems: 0,
